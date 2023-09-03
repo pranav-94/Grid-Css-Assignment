@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #grid{
+            display: grid;
+            grid-template-rows: 565px;
+            grid-template-columns: 4fr 2fr 1fr;
+            margin-bottom: -3px;
+            background-color: aliceblue;
+        }
+        .com{
+            width: 500px;
+        }
+        .common{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .common3{
+            background-color: yellow;
+            height: 560px;
+        }
+        .naruto{
+            margin-top: 40px;
+        }
+        #sasuke{
+            width: 150px;
+            height: 40px;
+            color: #ffffff;
+            background-color: black;
+            border: none;
+            font-size: 15px;
+        }
+        li{
+            list-style: none;
+        }
+        .navbar{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0px;
+            z-index: 1;
+            background-color:#d8ecfc;
+            flex-wrap: wrap;
+        }
+        .minato{
+            width: 150px;
+            height: 35px;
+            color: black;
+            background-color: rgb(54, 242, 54);
+            border: none;
+            border-radius: 5px;
+        }
+        #li{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .jiraya{
+            margin-left:70px ;
+        }
+        .section{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            background-color: #131313;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .h1{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .f{
+            width: 300px;
+            height: 430px;
+        }
+        .p{
+            color: #717171;
+        }
+        #cards{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            display: flex;
+           justify-content: space-evenly;
+           flex-wrap: wrap;
+           background-color: aliceblue;
+        }
+        .card{
+            height: 230px;
+            width: 300px;
+            border: 1px solid #2f2f2f;
+           border-radius: 30px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+        }
+        .img{
+            border-radius: 25px;
+        }
+        a{
+           text-decoration: none;
+           color: #717171;
+           margin-top: 30px;
+        }
+        .last{
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #131313;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #p{
+            width: 1263px;
+            height: 50px;
+            background-color: #131313;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" width="50px" height="50px" alt="Logo"/>
+       <div id="li">
+        <li>Home</li>
+        <li class="jiraya" >About</li>
+        <li class="jiraya">Contact</li>
+    </div>
+        <button class="minato">Login</button>
+    </div>
+    <div id="grid">
+        <div class="common common1">
+            <div class="com">
+            <h1>Healthy Food</h1>
+            <p class="naruto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi recusandae tempora. Vel cupiditate quae esse totam dolore quis? Totam impedit animi officia beatae Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe ipsam dignissimos laudantium beatae quos, quis sapiente, temporibus sed eos magnam amet. Non recusandae voluptates impedit, aspernatur quae reprehenderit velit quas. Dicta odio dolorem recusandae sapiente inventore? Necessitatibus error inventore soluta, odit esse veritatis sit! aliquid incidunt cumque quod explicabo unde.</p>
+            <button id="sasuke" class="naruto">Read More</button>
+        </div>
+        </div>
+        <div class="common common2">
+            <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="Healthy Food" height="560px"
+          />
+        </div>
+        <div class="common common3"></div>
+    </div>
+        
+    <!-- Section 2 -->
+<div class="section">
+    <div class="f">
+  <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" width="150px" height="285px" alt="Sub Section1"/>
+  <h1 class="h1">No Minimum Order</h1>
+  <p class="p">Order in for yourself or for the group, with no restrictions on order value</p>
+</div>
+<div class="f">
+  <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" width="150px" height="285px"  alt="Sub Section2"/>
+  <h1 class="h1">Live Order Tracking</h1>
+  <p class="p"> Know where your order is at all times, from the restaurant to yourdoorstep</p>
+</div>
+<div class="f">
+  <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" width="150px" height="285px"  alt="Sub Section3"/>
+  <h1 class="h1">Lightning-Fast Delivery</h1>
+  <p class="p"> Experience Swiggy's superfast delivery for food delivered fresh & on time </p>
+</div>
+</div>
+
+<!-- Section 3 -->
+<div id="cards">
+  <div class="card card1">
+    <img class="img" src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" width="300px" height="150px" alt="">
+    <h1>Order Online</h1>
+    <p>Stay Home and order to your Door Step</p>
+  </div>
+  <div class="card card2">
+    <img class="img" src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" width="300px" height="150px"  alt="">
+    <h1>On-site Dining</h1>
+    <p>View the city's favourite dining venues.</p>
+  </div>
+  <div class="card card3">
+    <img class="img" src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" width="300px" height="150px"  alt="">
+    <h1>Nightlife & Clubs</h1>
+    <p>Explore the city's top nightlife outlets & Book tables.</p>
+  </div>
+</div>
+
+<!-- last section -->
+
+<div class="last">
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" width="300px" height="300px" alt="">
+        <div class="list list1">
+            <h1>Navigation Links</h1>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="list list2">
+            <h1>Learn More</h1>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+        </div>
+    </div>
+    <p id="p">&#169; Copyright All rights Reserved</p>
+</body>
+</html>
